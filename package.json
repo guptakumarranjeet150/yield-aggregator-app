@@ -4,15 +4,17 @@
   "description": "DeFi Yield Aggregator & Multi-Strategy Vault Protocol on Soroban",
   "main": "dist/api/server.js",
   "scripts": {
-    "build": "tsc",
-    "start": "ts-node src/api/server.ts",
+    "build": "node init && tsc",
+    "start": "node init && ts-node src/api/server.ts",
     "sim": "ts-node src/simulation.ts",
     "test": "ts-node tests/test_sqlite.ts"
   },
   "dependencies": {
     "axios": "^1.6.0",
     "better-sqlite3": "^13.0.3",
-    "express": "^4.18.2"
+    "dotenv": "^8.2.0",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^9.6.0",
