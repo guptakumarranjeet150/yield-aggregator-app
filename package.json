@@ -4,8 +4,8 @@
   "description": "DeFi Yield Aggregator & Multi-Strategy Vault Protocol on Soroban",
   "main": "dist/api/server.js",
   "scripts": {
-    "build": "node init && tsc",
-    "start": "node init && ts-node src/api/server.ts",
+    "build": "tsc",
+    "start": "ts-node src/api/server.ts",
     "sim": "ts-node src/simulation.ts",
     "test": "ts-node tests/test_sqlite.ts"
   },
